@@ -1,6 +1,6 @@
 let header = document.querySelector('.header');
 let navbar = document.querySelector('.header .flex .navbar');
-let menuBtn = document.querySelector('.menu-btn');
+let MenuBtn = document.querySelector('#menu-btn');
 
 MenuBtn.onclick = () =>{
   navbar.classList.toggle('active');
@@ -15,4 +15,11 @@ window.onscroll = () =>{
   }else{
     header.classList.remove('active');
   }
+}
+let home =document.querySelector('#home');
+
+home.onmouseleave = () =>{
+  let homeImg = home.querySelector('.home-img');
+
+  homeImg.style.transform= `translateX(0px) translateY(0px)` ;
 }
