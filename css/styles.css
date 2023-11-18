@@ -111,7 +111,7 @@ color: var(--orange);
 }
 .home{
   min-height: 100vh;
-  background: url('/images/bg_diwali.png');
+  background: url('..//images/bg_diwali.png');
   background-size: cover;
   background-position: center;
   text-align: center;
