@@ -78,6 +78,7 @@ section{
 }
 
 .header.active{
+  transition: .2s linear;
   box-shadow: var(--box-shadow);
 }
 .header .flex{
@@ -151,7 +152,7 @@ color: var(--orange);
 }
 
 .about .flex .content h3{
-  font-size: 3rem;
+  font-size: 4rem;
   color: var(--orange);
   margin-bottom: .5rem;
 }
@@ -176,7 +177,7 @@ color: var(--orange);
 
 .offer-countdown .content h3{
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 4rem;
   color: var(--white);
 }
 
@@ -194,7 +195,7 @@ color: var(--orange);
   }
 
   .offer-countdown .content .flex .box{
-    width: 5rem;
+    width: 10rem;
     border-radius: .5rem;
     background-color: var(--yellow);
     text-align: center;
