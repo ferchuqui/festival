@@ -165,7 +165,7 @@ color: var(--orange);
 }
 
 .offer-countdown{
-  background: url('..//images/bg_diwali.png') no-repeat;
+  background: url('..//images/bg_counter.png') no-repeat;
   background-size: cover;
   background-position: center;
   padding: 2rem 0;
