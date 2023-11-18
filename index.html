@@ -1,76 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Festival</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festival</title>
 
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- https://www.youtube.com/watch?v=w-Rf0ujzoyE&t=445s -->
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- https://www.youtube.com/watch?v=w-Rf0ujzoyE&t=445s -->
+  </head>
+  <body>
+    <!-- header section starts-->
 
-  <!-- header section starts-->
+    <header class="header">
 
+      <section class="flex">
 
-  <header class="header">
+        <a href="#home" class="logo"
+          ><img src="/images/logo.png " alt="Diwali"
+        /></a>
 
-    <section class="flex">
+        <nav class="navbar">
+          <a href="#home">Inicio</a>
+          <a href="#about">Acerca de</a>
+          <a href="#offers">Ofertas</a>
+          <a href="#contact">Contacto</a>
+        </nav>
 
-      <a href="#home" class="logo"><img src="/images/logo.png " alt="Diwali"></a>
+        <div id="menu-btn" class="fas fa-bars bars-staggered"></div>
 
-      <nav class="navbar">
-        <a href="#home">Inicio</a>
-        <a href="#about">Acerca de</a>
-        <a href="#offers">Ofertas</a>
-        <a href="#contact">Contacto</a>
-      </nav>
+      </section>
+    </header>
+    <!-- header section ends-->
+    <!-- home section starts -->
+    <div class="home" id="home">
+      <img src="/images/happy_diwal.png" class="home-img" alt="" />
+    </div>
 
-      <div id="menu-btn" class="fas fa-bars bars-staggered"></div>
+    <!-- home section ends-->
 
+    <!-- about section starts-->
+
+    <section class="about" id="about">
+      <div class="flex">
+        <div class="image">
+          <img src="/images/about-img-1.png" alt="" />
+        </div>
+        <div class="content">
+          <h3>subh diwali</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo,
+            vitae. Ea perspiciatis possimus vel, libero labore numquam ad nobis
+            incidunt.
+          </p>
+          <a href="#" class="btn">Leer más</a>
+        </div>
+      </div>
+
+      <div class="flex">
+        <div class="content">
+          <h3>Tus deseos</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo,
+            vitae. Ea perspiciatis possimus vel, libero labore numquam ad nobis
+            incidunt.
+          </p>
+          <a href="#" class="btn">Leer más</a>
+        </div>
+        <div class="image">
+          <img src="/images/about-img-2.png" alt="" />
+        </div>
+      </div>
     </section>
-</header>
-  <!-- header section ends-->
-  <!-- home section starts -->
-<div class="home" id="home">
-  <img src="/images/happy_diwal.png" class="home-img" alt="">
-</div>
+    <!-- about section ends-->
 
-  <!-- home section ends-->
+    <!-- count down section starts -->
 
+    <div class="offer-countdown">
+      <section class="content">
+        <h3>Apurate</h3>
+        <p>la oferta termina en :</p>
 
+        <div class="flex">
+          <div class="box">
+            <div class="count" id="day">00</div>
+            <span>dias</span>
+          </div>
+          <div class="box">
+            <div class="count" id="hour">00</div>
+            <span>horas</span>
+          </div>
+          <div class="box">
+            <div class="count" id="minute">00</div>
+            <span>minutos</span>
+          </div>
+          <div class="box">
+            <div class="count" id="second">00</div>
+            <span>segundos</span>
+          </div>
+        </div>
 
-
-
-  <!-- about section starts-->
-
-  <section class="about" id="about">
-
-    <div class="flex">
-      <div class="image">
-        <img src="/images/about-img-1.png" alt="" />
-      </div>
-      <div class="content">
-        <h3>subh diwali</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, vitae. Ea perspiciatis possimus vel, libero labore numquam ad nobis incidunt.</p>
-        <a href="#" class="btn">Leer más</a>
-      </div>
+        <a href="#offers" class="btn">ver ofertas</a>
+      </section>
     </div>
-
-    <div class="flex">
-
-      <div class="content">
-        <h3>Tus deseos</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, vitae. Ea perspiciatis possimus vel, libero labore numquam ad nobis incidunt.</p>
-        <a href="#" class="btn">Leer más</a>
-      </div>
-      <div class="image">
-        <img src="/images/about-img-2.png" alt="" />
-      </div>
-    </div>
-
-  </section>
-  <!-- about section ends-->
-  <script src="/js/script.js"></script>
-</body>
+    <!-- count down section ends -->
+    <script src="/js/script.js"></script>
+  </body>
 </html>

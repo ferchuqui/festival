@@ -70,9 +70,6 @@ section{
   background: var(--gradient-hover);
 }
 
-body{
-  height: 300rem;
-}
 .header{
   position: sticky;
   top: 0; left: 0; right: 0;
@@ -166,10 +163,61 @@ color: var(--orange);
   line-height: 1.8;
 }
 
+.offer-countdown{
+  background: url('/images/bg_counter.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 0;
+}
+
+.offer-countdown .content{
+  text-align: center;
+}
+
+.offer-countdown .content h3{
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.offer-countdown .content p{
+  font-size: 2rem;
+  color: var(--white);
+  padding: 1rem 0;
+  }
+
+  .offer-countdown .content .flex{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .offer-countdown .content .flex .box{
+    width: 5rem;
+    border-radius: .5rem;
+    background-color: var(--yellow);
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .offer-countdown .content .flex .box .count{
+    font-size: 3rem;
+    color: var(--black);
+  }
+
+  .offer-countdown .content .flex .box span{
+    font-size: 1.5rem;
+    color: var(--black);
+  }
+
+
 
 
 
 /* media queries */
+
+
 
 @media (max-width: 991px){
 
@@ -226,5 +274,18 @@ color: var(--orange);
   .home{
     min-height: 55vh;
   }
+  .offer-countdown .content .flex{
+    flex-wrap: wrap;
+    padding: .5rem 1.5rem;
+  }
+
+  .offer-countdown .content .flex .box{
+    flex: 1 1 15rem;
+  }
+
+  .offers-countdown .content .flex .box .count{
+    font-size: 4rem;
+  }
+
 }
 
