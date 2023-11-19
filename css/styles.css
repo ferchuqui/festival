@@ -14,7 +14,7 @@
   --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
   --border:.1rem solid rgba(0,0,0,.3);
   --gradient: linear-gradient(90deg, var(--yellow), var(--orange));
-  --gradient-over: linear-gradient(90deg, var(--orange), var(--yellow));
+  --gradient-hover: linear-gradient(90deg, var(--orange), var(--yellow));
 }
 
 *{
@@ -68,6 +68,7 @@ section{
 
 .btn:hover{
   background: var(--gradient-hover);
+
 }
 
 .header{
@@ -214,6 +215,39 @@ color: var(--orange);
 
 
 
+.offers .products-slider .box{
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  user-select: none;
+}
+
+.offers .products-slider .box img{
+  height: 30rem;
+  width: 100%;
+  object-fit: contain;
+  transition: .2s linear;
+  margin-bottom: 1rem;
+}
+
+  .offers .products-slider .box:hover img{
+    transform: scale(1.1);
+  }
+
+  .offers .products-slider .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    margin: 1rem 0;
+  }
+
+  .offers .products-slider .box p{
+    font-size: 1.6rem;
+    color: var(--orange);
+  }
+  .swiper-pagination-bullet-active{
+    background: -o-repeating-linear-gradient();
+  }
 
 
 /* media queries */
